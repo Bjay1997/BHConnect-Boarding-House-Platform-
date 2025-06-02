@@ -1,0 +1,131 @@
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+
+.profile-picture-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.profile-pictures {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.profile-picture-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.change-photo-btn {
+    font-size: 0.9rem;
+    background: none;
+    border: none;
+    color: #f76c6c;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.user-details-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+}
+
+h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.forms-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-group strong {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+.forms-group input {
+    height: 42px;
+    padding: 0 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /*background-color: #fff;*/
+    /*transition: border-color 0.2s ease-in-out;*/
+}
+
+.forms-group input:focus {
+    border-color: #888;
+    outline: none;
+}
+
+.id-upload-instructions {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+.form-buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.save-btn,
+.cancel-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+    cursor: pointer;
+}
+
+.save-btn:hover,
+.cancel-btn:hover {
+    background-color: #e6e6e6;
+}
+
+@media (max-width: 768px) {
+    .user-details-section {
+        grid-template-columns: 1fr;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

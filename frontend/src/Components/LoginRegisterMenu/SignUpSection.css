@@ -1,0 +1,358 @@
+#logo-pic{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 230px;
+    bottom: -15px;
+}
+
+/* Main container */
+.bhconect-signup-container {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust based on navbar height */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevent entire page from scrolling */
+}
+
+/* Hero section */
+.bhconnect-section {
+    flex: 1;
+    padding: 40px;
+    background-color: #f8f9fa;
+    color: #333;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bhconnect-section h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    /*margin-bottom: 20px;*/
+    position: relative;
+    top: 40px;
+    margin: auto;
+}
+
+.bhconnect-section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    /*margin-bottom: 30px;*/
+    position: relative;
+    top: 50px;
+}
+
+.benefits-container {
+    position: relative;
+    top: 50px;
+    /*margin-top: 40px;*/
+}
+
+.benefit-item {
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.benefit-item h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.footer-note {
+    margin-top: auto; /* Pushes footer to bottom */
+    padding-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Signup form section */
+.bhconnect-signup-form {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+    max-width: 50%;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100%; /* Take full height of container */
+}
+
+/* Custom scrollbar styling */
+/*.bhconnect-signup-form::-webkit-scrollbar {*/
+/*    width: 8px;*/
+/*}*/
+
+/*.bhconnect-signup-form::-webkit-scrollbar-track {*/
+/*    background: #f1f1f1;*/
+/*}*/
+
+/*.bhconnect-signup-form::-webkit-scrollbar-thumb {*/
+/*    background: #3498db;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+/*.bhconnect-signup-form::-webkit-scrollbar-thumb:hover {*/
+/*    background: #2980b9;*/
+/*}*/
+
+/* Form header */
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    /*margin-bottom: 10px;*/
+    position: relative;
+    bottom: 20px;
+}
+
+.tagline{
+    /*margin: auto;*/
+    /*width: 100%;*/
+    /*background-color: #2c3e50;*/
+    /*color: white;*/
+    /*padding: 10px;*/
+    text-align: center;
+    font-size: 1.2rem;
+    /*border-radius: 5px;*/
+}
+
+.form-header p {
+    font-size: 1rem;
+    color: #555;
+    margin: auto;
+}
+
+.login-link-text {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.verification-text{
+    font-size: 1rem;
+    color: #555;
+    margin: auto;
+    position: relative;
+    bottom: 15px;
+    /*left: 40px;*/
+    /*text-align: left;*/
+    /*margin: auto;*/
+    /*text-align: left;*/
+}
+
+/*.verification-text a{*/
+/*    color: #3498db;*/
+/*    text-decoration: none;*/
+/*}*/
+
+
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 20px;
+}
+
+.name-fields .input-groupss {
+    flex: 1;
+}
+
+.input-groupss {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-groupss label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2c3e50;
+    position: relative;
+    left: 10px;
+}
+
+
+.input-groupss {
+    position: relative;
+    display: flex  ;
+    flex-direction: column;
+    /*gap: 7.2rem;*/
+    /*margin: 10px;*/
+    width: 90%;
+    /*padding: 10px 10px;*/
+    margin: auto;
+
+}
+
+.input-groupss i {
+    position: absolute;
+    left: 310px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.input-groupss input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.input-groupss input[type="text"],
+.input-groupss input[type="password"],
+.input-groupss input[type="email"],
+.input-groupss input[type="tel"],
+.input-groupss input[type="file"]
+{
+
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 90%;
+    transition: border 0.2s ease;
+    margin: auto;
+}
+
+.input-groupss input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.role{
+    min-width: 96%;
+    max-width: 96%;
+    width: 96%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.2s ease;
+    margin: auto;
+}
+
+.role:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+select{
+    color: #696969;
+}
+
+.input-groupss select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1rem;
+}
+
+/* Button */
+.signup-button {
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /*margin-top: 10px;*/
+}
+
+.signup-button:hover {
+    background-color: #2980b9;
+}
+
+.signup-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+/* Login link */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    position: relative;
+    /*background-color: violet;*/
+    bottom: 50px;
+}
+
+.login-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .bhconect-signup-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bhconnect-section,
+    .bhconnect-signup-form {
+        max-width: 100%;
+        padding: 30px 20px;
+        overflow: visible;
+    }
+
+    .bhconnect-signup-form {
+        max-height: none;
+    }
+
+    .name-fields {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-note {
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+}
+
+/* Animation for form elements */
+.input-groupss input,
+.input-groupss select {
+    transition: all 0.3s ease;
+}
+
+.input-groupss input:focus,
+.input-groupss select:focus {
+    transform: translateY(-2px);
+}
+
+.signup-button {
+    transition: all 0.3s ease;
+}
+
+.signup-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

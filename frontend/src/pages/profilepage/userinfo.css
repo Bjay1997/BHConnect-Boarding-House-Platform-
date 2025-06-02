@@ -1,0 +1,109 @@
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-picture-section {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.profile-picturess {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.profile-picture-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #4a6fa5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 2px solid #ddd;
+}
+
+.user-details-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.user-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-detail strong {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+.user-detail span {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-div {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.edit-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.edit-btn:hover {
+    background-color: #3a5a80;
+}
+
+/* Optional: Name and location below profile picture (like in image) */
+.profile-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.profile-location {
+    font-size: 0.9rem;
+    color: gray;
+    text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .user-details-section {
+        grid-template-columns: 1fr;
+    }
+}
