@@ -17,9 +17,9 @@ npm
 Vite 
 
 Installing
-1. download the zip and extract
-git clone https://github.com/your-username/bhconnect.git
-cd bhconnect
+1. download the zip and extract or
+git clone https://github.com/Bjay1997/BHConnect-Boarding-House-Platform-.git
+cd BHConnect-Boarding-House-Platform-
 2. Install Backend Requirements
 cd backend
 pip install -r requirements.txt
